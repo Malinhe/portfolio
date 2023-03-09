@@ -1,17 +1,25 @@
 .header-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 108px;
     color: white;
     padding: 37px 100px;
 }
 
+.name {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+}
+
 .link-container {
     display: flex;
 
     div {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
         font-family: 'poppins';
         font-style: normal;
         font-weight: 400;
