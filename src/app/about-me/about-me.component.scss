@@ -1,0 +1,41 @@
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.about-container {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 100px;
+
+}
+
+.about-infos {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    max-width: 500px;
+
+    img {
+        height: 32px;
+        object-fit: cover;
+        margin-right: 8px;
+    }
+}
+
+.about-me {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 108px;
+}
+
+.profile-pic {
+    width: 380px;
+    height: 430px;
+}

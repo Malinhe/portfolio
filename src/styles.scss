@@ -4,3 +4,15 @@ body {
     font-family: 'Poppins';
     font-style: normal;
 }
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent
+}
