@@ -1,5 +1,22 @@
-.skill-container {
-    padding-left: 100px;
-    width: 100vw;
-    max-width: 100%;
-}
+ .skill-container {
+     padding-left: 100px;
+     width: 100vw;
+     max-width: 100%;
+    
+ }
+
+ td {
+    padding: 40px;
+ }
+
+ .skills {
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     img {
+         width: 64px;
+         object-fit: cover;
+     }
+ }
