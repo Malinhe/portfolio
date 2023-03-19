@@ -8,6 +8,7 @@
      height: 64vh;
      display: flex;
      justify-content: center;
+     align-items: center;
      position: relative;
  }
 
@@ -17,6 +18,7 @@
      top: 72px;
      height: 32rem;
      width: 25rem;
+     z-index: -1;
  }
 
  .img-right {
@@ -25,14 +27,17 @@
      top: 72px;
      height: 32rem;
      width: 25rem;
+     z-index: -1;
+ }
+
+ .presentation-container {
+     margin-top: 230px;
  }
 
  .presentation {
      display: flex;
      align-items: center;
      justify-content: center;
-     position: absolute;
-     top: 230px;
  }
 
  .vertikal {
@@ -65,8 +70,9 @@
  }
 
  .btn-container {
-     position: relative;
-     width: 100vw;
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
 
      button {
          background-color: #70E61C;
@@ -75,10 +81,9 @@
          border: unset;
          padding: 15px 30px 15px 30px;
          cursor: pointer;
-         position: absolute;
-         left: 46vw;
 
          &:hover {
+             background-color: #9747FF;
              transform-origin: top left;
              animation: btn-animation 175ms ease-in;
              transform: scaleX(1.3) scaleY(1.3);
@@ -91,8 +96,6 @@
          }
      }
  }
-
-
 
  @keyframes btn-animation {
      0% {
@@ -108,12 +111,11 @@
      }
  }
 
-
  .icon-links {
      display: flex;
      align-items: center;
      margin-left: -15px;
-     margin-top: 140px;
+     margin-top: 180px;
 
      img {
          margin-left: 16px;
