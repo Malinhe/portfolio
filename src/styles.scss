@@ -3,12 +3,13 @@ body {
     background-color: #141D2F;
     font-family: 'Poppins';
     font-style: normal;
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
-    overflow-x: hidden
+    // box-sizing: border-box;
+    
 }
 
 // body::-webkit-scrollbar {
