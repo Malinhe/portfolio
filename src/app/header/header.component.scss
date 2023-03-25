@@ -22,11 +22,16 @@
 .link-container {
     display: flex;
 
-    div {
-        margin-left: 16px;
-        margin-right: 16px;
+   a {
+        margin-left: 32px;
         font-weight: 400;
         font-size: 23px;
         line-height: 120%;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color:  #70E61C;
+        }
     }
 }
