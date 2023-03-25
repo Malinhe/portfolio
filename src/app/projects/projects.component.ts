@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-     
       img: 'elPolloLoco.png',
       name: 'El pollo loco',
       languages: 'JavaScript | HTML | CSS',
@@ -16,12 +15,11 @@ export class ProjectsComponent {
     },
 
     {
-     
       img: 'join.png',
       name: 'Join',
       languages: 'JavaScript | HTML | CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categorys.'
-    },
+    }
 
   ];
 }

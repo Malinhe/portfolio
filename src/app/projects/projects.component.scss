@@ -1,19 +1,12 @@
-// .project-container {
-//     display: flex;
-//     align-items: center;
-
-//    
-
-// }
-
-
-
-.project-container {
+.content-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    box-sizing: border-box;
+    padding-right: 100px;
+
+    h2 {
+        color: #9747FF;
+    }
 
     span {
         font-size: 32px;
@@ -41,22 +34,84 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
+    max-width: 75%;
 }
 
-.project-container:nth-child(even) img {
-    margin-right: 0;
-    margin-left: 2rem;
+.image-container {
+    max-width: 100%;
+    height: auto;
 }
 
-.image-right img {
-    margin-right: 0;
-    margin-left: 2rem;
+.text-container {
+    flex: 1;
+    padding-right: 24px;
 }
 
-.image-right>div {
-    order: 1;
+.content-right {
+    flex-direction: row-reverse;
+    text-align: -webkit-right;
 }
 
-.image-left>div {
-    order: 2;
+.content-left {
+    flex-direction: row;
+    text-align: -webkit-left;
 }
+
+.btn-container {
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.live-test-btn {
+    height: 58px;
+    width: 152px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 30px 15px 30px;
+    background-color: #9747FF;
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+
+    &:hover {
+        background-color: #70E61C;
+    }
+}
+
+.github-btn {
+    height: 58px;
+    width: 152px;
+    border-radius: 10px;
+    border: 1px solid #70E61C;
+    padding: 15px 30px 15px 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+
+    &:hover {
+        background-color: #70E61C;
+    }
+}
+
+
+//   @media (max-width: 768px) {
+//     .content-container {
+//       flex-direction: column;
+//     }
+
+//     .content-right, .content-left {
+//       flex-direction: column-reverse;
+//     }
+
+//     .image-container {
+//       margin-bottom: 2rem;
+//     }
+
+//     .text-container {
+//       padding: 2rem 0;
+//     }
+//   }
