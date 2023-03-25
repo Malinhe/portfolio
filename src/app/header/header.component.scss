@@ -11,7 +11,7 @@
     padding-right: 100px;
     z-index: 999;
     position: fixed;
-    background-color: #141d2f;   
+    background-color: #141d2f;
 }
 
 .name {
@@ -22,16 +22,34 @@
 .link-container {
     display: flex;
 
-   a {
+    a {
         margin-left: 32px;
         font-weight: 400;
         font-size: 23px;
         line-height: 120%;
         text-decoration: none;
         color: white;
+        position: relative;
 
         &:hover {
-            color:  #70E61C;
+            color: #70E61C;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #9747FF;
+            transition: all 0.3s ease-in-out;
+            transform-origin: left;
+        }
+
+        &:hover:after {
+            width: 100%;
+            transform: scaleX(1);
         }
     }
 }
