@@ -9,6 +9,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectsComponent } from './projects/projects.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AboutMeComponent,
     MySkillsComponent,
     ImprintComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

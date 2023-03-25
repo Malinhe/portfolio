@@ -1,0 +1,30 @@
+.portfolio-content {
+    width: 100vw;
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+
+.portfolio-title {
+    display: flex;
+    align-items: center;
+   
+
+    img {
+        margin-left: -100px;
+        margin-right: 50px;
+    }
+
+    span {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+        color: white;
+    }
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: white;
+}

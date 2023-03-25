@@ -6,6 +6,7 @@
 
 .about-container {
     width: 100vw;
+    max-width: 100%;
     box-sizing: border-box;
     display: flex;
     padding-left: 100px;
@@ -42,17 +43,17 @@
 }
 
 .shadow-photo-bg {
-    width: 42rem;
-    height: 50rem;
+    width: 32rem;
+    height: 46rem;
     margin-top: 79px;
 }
 
 .profile-pic {
     position: absolute;
-    top: 85px;
-    right: 120px;
-    width: 32rem;
-    height: 38rem;
+    top: 148px;
+    right: 64px;
+    width: 23rem;
+    height: 30rem;
     object-fit: contain;
 }
 
