@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+  projects = [
+    {
+     
+      img: 'elPolloLoco.png',
+      name: 'El pollo loco',
+      languages: 'JavaScript | HTML | CSS',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins, hearts and salsa-bottles bottles to fight against the big chicken.'
+    },
 
+    {
+     
+      img: 'join.png',
+      name: 'Join',
+      languages: 'JavaScript | HTML | CSS',
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categorys.'
+    },
+
+  ];
 }

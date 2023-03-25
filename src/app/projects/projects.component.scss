@@ -1,6 +1,19 @@
+// .project-container {
+//     display: flex;
+//     align-items: center;
+
+//    
+
+// }
+
+
+
 .project-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
 
     span {
         font-size: 32px;
@@ -14,7 +27,6 @@
         height: 339px;
         object-fit: contain;
     }
-
 }
 
 .languages {
@@ -29,4 +41,22 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
+}
+
+.project-container:nth-child(even) img {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+
+.image-right img {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+
+.image-right>div {
+    order: 1;
+}
+
+.image-left>div {
+    order: 2;
 }

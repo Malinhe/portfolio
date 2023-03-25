@@ -1,4 +1,4 @@
-<div class="project-container">
+<!-- <div class="project-container">
     <img src="assets/img/portfolio-pics/elPolloLoco.png"
         alt="Picture of a laptop wiht a screenshot from the El pollo loco game">
     <div>
@@ -8,5 +8,30 @@
             Help Pepe to find coins, hearts and salsa-bottles bottles to fight
             against the big chicken.</p>
     </div>
+[ngStyle]="{'top.px': 20 + (i * 70)}"
+</div> -->
+<!-- <div *ngFor="let project of projects; let i = index" class="project-container"  [ngClass]="{ 'image-right': i % 2 !== 0, 'image-left': i % 2 === 0 }">
+   
+    <img src="assets/img/portfolio-pics/elPolloLoco.png">
 
-</div>
+    <div>
+      <span>El pollo loco</span>
+      <p class="languages">JavaScript | HTML | CSS</p>
+      <p class="description">A simple Jump-and-Run game based on an object-oriented approach.<br>
+        Help Pepe to find coins, hearts and salsa-bottles bottles to fight
+        against the big chicken.</p>
+    </div>
+    <img src="{{ project.img.png }}"
+  </div> -->
+
+<div *ngFor="let project of projects; let i = index" class="project-container" [ngClass]="{ 'image-right': i % 2 !== 0, 'image-left': i % 2 === 0 }">
+    <img src="assets/img/portfolio-pics/{{project.img}}">
+    <div>
+      <span>{{ project.name }}</span>
+      <p class="languages">{{ project.languages }}</p>
+      <p class="description">{{ project.description }}</p>
+    </div>
+  </div>
+
+
+  
