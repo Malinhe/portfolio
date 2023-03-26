@@ -11,6 +11,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     ImprintComponent,
     PortfolioComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
