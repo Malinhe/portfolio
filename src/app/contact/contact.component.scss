@@ -3,6 +3,7 @@
     align-items: center;
     position: absolute;
     right: 0px;
+    max-height: 100vh;
 
     h2 {
         color: white;
@@ -24,7 +25,6 @@
     display: flex;
     flex-direction: column;
     color: white;
-    height: 500px;
     width: 500px;
 
     img {
@@ -46,7 +46,6 @@
 }
 
 .contact-formular {
-    height: 500px;
     width: 500px;
 
     form {
@@ -59,8 +58,8 @@
         background-color: transparent;
         border: 1px solid #9747FF;
         border-radius: 10px;
-        width: 490px;
-        height: 50px;
+        width: 470px;
+        height: 40px;
         margin-bottom: 40px;
         padding: 8px;
         font-family: 'Poppins';
@@ -75,8 +74,8 @@
         background-color: transparent;
         border: 1px solid #9747FF;
         border-radius: 10px;
-        width: 490px;
-        height: 200px;
+        width: 470px;
+        height: 150px;
         margin-bottom: 40px;
         padding: 8px;
         font-family: 'Poppins';
@@ -88,14 +87,12 @@
     }
 
     button {
-        width: 241px;
-        height: 58px;
-        background: #70E61C;
-        border-radius: 10px;
-        font-weight: 400;
         font-size: 23px;
-        line-height: 120%;
+        font-weight: 400;
+        line-height: 28px;
+        background-color: #70E61C;
         color: white;
+        border-radius: 10px;
         border: unset;
         padding: 15px 30px 15px 30px;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -125,10 +122,27 @@
     }
 }
 
+.go-up-btn {
+    cursor: pointer;
+    object-fit: contain;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: unset;
+    position: absolute;
+    bottom: -8rem;
+    right: 8rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 .purple-shadow {
     position: absolute;
-    bottom: -33rem;
-    left: -63px;
-    width: 34rem;
+    bottom: -28rem;
+    width: 56rem;
     z-index: -1;
+    right: -14rem;
+    height: 37rem;
 }
