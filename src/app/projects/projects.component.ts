@@ -11,14 +11,18 @@ export class ProjectsComponent {
       img: 'elPolloLoco.png',
       name: 'El pollo loco',
       languages: 'JavaScript | HTML | CSS',
-      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins, hearts and salsa-bottles bottles to fight against the big chicken.'
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins, hearts and salsa-bottles bottles to fight against the big chicken.',
+      liveTest: 'ElPolloLoco',
+      github: 'El-Pollo-Loco'
     },
 
     {
       img: 'join.png',
       name: 'Join',
       languages: 'JavaScript | HTML | CSS',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categorys.'
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categorys.',
+      liveTest: 'JOIN-V3',
+      github: 'JOIN-V3'
     }
 
   ];

@@ -1,14 +1,17 @@
-
-    <div *ngFor="let project of projects; let i = index" class="content-container" [ngClass]="{ 'content-right': i % 2 !== 0, 'content-left': i % 2 === 0 }">
-      <img class="image-container" src="assets/img/portfolio-pics/{{project.img}}">
-      <div class="text-container">
-        <h2>{{ project.name }}</h2>
-        <p class="languages">{{ project.languages }}</p>
-        <p class="description">{{ project.description }}</p>
-        <div class="btn-container">
-          <button class="live-test-btn">Live test</button>
-          <button class="github-btn">Github</button>
-        </div>
-      </div>
+<div *ngFor="let project of projects; let i = index" class="content-container"
+  [ngClass]="{ 'content-right': i % 2 !== 0, 'content-left': i % 2 === 0 }">
+  <img class="image-container" src="assets/img/portfolio-pics/{{project.img}}">
+  <div class="text-container">
+    <h2>{{ project.name }}</h2>
+    <p class="languages">{{ project.languages }}</p>
+    <p class="description">{{ project.description }}</p>
+    <div class="btn-container">
+      <a href="https://malaica-brunks.developerakademie.net/{{ project.liveTest }}" target="_blank">
+        <button class="live-test-btn">Live test</button>
+      </a>
+      <a href="https://github.com/Malinhe/{{ project.github }}" target="_blank">
+        <button class="github-btn">Github</button>
+      </a>
     </div>
-  
+  </div>
+</div>
