@@ -43,24 +43,25 @@
 }
 
 .shadow-photo-bg {
-    width: 32rem;
-    height: 42rem;
-    margin-top: 79px;
+    width: 40rem;
+    height: 40rem;
+    margin-top: 108px;
 }
+
 
 .profile-pic {
     position: absolute;
-    top: 148px;
+    top: 114px;
     right: 64px;
-    width: 23rem;
-    height: 30rem;
+    width: 30rem;
+    height: 33rem;
     object-fit: contain;
 }
 
 .curved-image {
     position: absolute;
     width: 100vw;
-    height: 240px;
-    bottom: 0;
+    height: 267px;
+    bottom: -112px;
     left: 0;
 }

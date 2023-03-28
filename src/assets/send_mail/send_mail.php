@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'malaica.brunks@gmx.de';
-$redirect = 'success.html';
+// $redirect = 'success.html';
 
 ########### CONFIG END ###########
 
