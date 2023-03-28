@@ -16,7 +16,7 @@
     </div>
 
     <div class="contact-formular">
-        <form action="https://malaica-brunks.developerakademie.net/send_mail/send_mail.php">
+        <form action="https://malaica-brunks.developerakademie.net/send_mail/send_mail.php" (submit)="sendMail()" method="post">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" placeholder="Your email" required>
             <textarea name="message" cols="30" rows="10" placeholder="Your message" required></textarea>

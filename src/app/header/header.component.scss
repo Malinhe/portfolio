@@ -12,6 +12,11 @@
     z-index: 999;
     position: fixed;
     background-color: #141d2f;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .name {

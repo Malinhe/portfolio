@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-
+sendMail() {
+  // action="https://malaica-brunks.developerakademie.net/send_mail/send_mail.php"
+}
 }
