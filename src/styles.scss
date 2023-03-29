@@ -5,16 +5,36 @@ body {
     font-style: normal;
     overflow-x: hidden;
 
-}
-
-html {
-    scroll-behavior: smooth;
-    // box-sizing: border-box;
     
 }
 
-// body::-webkit-scrollbar {
-//     width: 0;
-//     height: 0;
-//     background: transparent
-// }
+html {
+    scroll-behavior: smooth; 
+     // Verstecke die Standard-Scrollbar
+     ::-webkit-scrollbar {
+        display: none;
+      }
+    
+      // Zeige die eigene Scrollbar, wenn der Mauszeiger darüber schwebt
+      &:hover {
+        ::-webkit-scrollbar {
+          display: block;
+        }
+      }
+    
+      // Stilisiere die eigene Scrollbar
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+        background-color: #9747FF;
+        border-radius: 5px;
+      }
+   
+}
+
+.logo {
+  width: 56px;
+}
