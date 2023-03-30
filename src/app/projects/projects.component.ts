@@ -23,7 +23,16 @@ export class ProjectsComponent {
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categorys.',
       liveTest: 'JOIN-V3',
       github: 'JOIN-V3'
-    }
+    },
+
+    // {
+    //   img: 'ringOfFire.png',
+    //   name: 'Ring of fire',
+    //   languages: 'Angular | TypeScript | Firebase | HTML | SCSS',
+    //   description: 'The well-known card drinking game.',
+    //   liveTest: 'Ring of fire',
+    //   github: 'ringoffire'
+    // }
 
   ];
 }

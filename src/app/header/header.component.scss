@@ -53,3 +53,16 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .header-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }}
+
+    @media (max-width: 720px) {
+        .header-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+}

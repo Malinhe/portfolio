@@ -13,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataProtectComponent } from './data-protect/data-protect.component';
+import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { DataProtectComponent } from './data-protect/data-protect.component';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    DataProtectComponent
+    DataProtectComponent,
+    HeaderMobileComponent
   ],
   imports: [
     BrowserModule,
