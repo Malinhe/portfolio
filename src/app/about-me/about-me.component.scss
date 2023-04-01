@@ -71,6 +71,9 @@
     .about-container {
         display: flex;
         flex-direction: column-reverse;
+        margin-left: unset;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -83,23 +86,35 @@
     .about-infos {
         font-size: 16px;
         line-height: 120%;
+        margin-top: 4rem;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .shadow-photo-bg {
+        width: 22rem;
+        height: 24rem;
+        margin-top: 14px;
     }
 
     .profile-pic {
         position: absolute;
-        top: 141px;
-        right: 0px;
-        width: 20rem;
-        height: 33rem;
+        top: 2rem;
+        width: 16rem;
+        height: 22rem;
         object-fit: contain;
+        left: 0;    
     }
 
     .curved-image {
         position: absolute;
         width: 100vw;
-        height: 270px;
+        height: 8rem;
         left: 0;
         right: 0;
-        top: 78vh;
+        top: 56vh;
     }
 }

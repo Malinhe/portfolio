@@ -148,10 +148,24 @@
 }
 
 @media (max-width: 576px) {
+    .contact-title {
+        h2 {
+            font-size: 45px;
+            line-height: 120%;
+        }
+
+        img {
+            width: 64px;
+            height: 4px;
+            border-radius: 30px;
+        }
+    }
+
     .contact-me {
         flex-direction: column;
         padding-left: 25px;
         padding-right: 25px;
+        margin-top: 8rem;
     }
 
     .content-description {
@@ -194,5 +208,10 @@
         z-index: -1;
         right: 0;
         height: 25rem;
+    }
+
+    .go-up-btn {
+        bottom: -8rem;
+        right: 11rem;
     }
 }
