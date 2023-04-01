@@ -47,27 +47,6 @@
          line-height: 19px;
      }
 
-     button {
-         background-color: #70E61C;
-         border-radius: 10px;
-         color: white;
-         border: unset;
-         padding: 15px 30px 15px 30px;
-         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-         cursor: pointer;
-         margin-top: 20px;
-         font-size: 23px;
-         font-weight: 400;
-         line-height: 28px;
-
-         &:hover {
-             background-color: #9747FF;
-             transform-origin: top left;
-             animation: btn-animation 175ms ease-in;
-             transform: scaleX(1.3) scaleY(1.3);
-         }
-     }
-
      img {
          margin-left: 32px;
          margin-right: -8px;
@@ -80,7 +59,37 @@
      margin-top: 188px;
  }
 
+ .get-in-touch-btn-container {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
+ .get-in-touch-btn {
+     display: none;
+ }
+
+ .btn-design {
+     background-color: #70E61C;
+     border-radius: 10px;
+     color: white;
+     border: unset;
+     padding: 15px 30px 15px 30px;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+     cursor: pointer;
+     margin-top: 20px;
+     font-size: 23px;
+     font-weight: 400;
+     line-height: 28px;
+
+     &:hover {
+         background-color: #9747FF;
+         transform-origin: top left;
+         animation: btn-animation 175ms ease-in;
+         transform: scaleX(1.3) scaleY(1.3);
+     }
+ }
 
  @keyframes btn-animation {
      0% {
@@ -99,6 +108,8 @@
  @media (max-width: 768px) {
      .skill-container {
          flex-direction: column-reverse;
+         padding-left: 75px;
+
 
          td {
              padding-right: 60px;
@@ -106,22 +117,65 @@
          }
      }
 
-     .skills-container-right-side {
-        margin-bottom: 64px;
-        
-         img {
-             margin-right: -15px;
-         }
-
-
-
-         // p{
-         //     max-width: 75%;
-         // }
+     .table {
+         display: flex;
+         justify-content: center;
+         align-items: center;
      }
 
-     .box2, .box3 {
+     .skills {
+         img {
+             width: 38px;
+         }
+     }
+
+     .skills-container-right-side {
+         margin-bottom: 48px;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+
+
+         button {
+             display: none;
+         }
+     }
+
+     .box2,
+     .box3 {
          text-align: center;
          width: 100%;
+     }
+
+     .get-in-touch-btn {
+         display: block;
+     }
+ }
+
+ @media (max-width: 576px) {
+     .skills-container-right-side {
+         span {
+             font-size: 45px;
+             line-height: 120%;
+         }
+
+         p {
+             font-size: 16px;
+             line-height: 120%;
+         }
+     }
+
+     .btn-design {
+         font-size: 16px;
+         line-height: 120%;
+     }
+
+     .skill-container {
+         padding-left: 25px;
+
+         td {
+             padding-right: 30px;
+             padding-bottom: 30px;
+         }
      }
  }
