@@ -10,7 +10,7 @@
     max-width: 100%;
     box-sizing: border-box;
     display: flex;
-    padding-left: 100px;
+    margin-left: 100px;
     padding-top: 32px;
     justify-content: space-between;
     position: relative;
@@ -38,7 +38,7 @@
 
 .profile-pic-container {
     position: relative;
-    padding-right: -40px;
+    // padding-right: -40px;
     margin-right: 8rem;
     margin-top: 24px;
 }
@@ -65,4 +65,41 @@
     height: 270px;
     bottom: -112px;
     left: 0;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-me {
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .about-infos {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .profile-pic {
+        position: absolute;
+        top: 141px;
+        right: 0px;
+        width: 20rem;
+        height: 33rem;
+        object-fit: contain;
+    }
+
+    .curved-image {
+        position: absolute;
+        width: 100vw;
+        height: 270px;
+        left: 0;
+        right: 0;
+        top: 78vh;
+    }
 }

@@ -31,11 +31,11 @@
     flex-direction: column;
 }
 
-.my-name {
-    font-weight: 700 !important;
-    font-size: 42px !important;   
-    margin-bottom: 8px; 
-}
+// .my-name {
+//     font-weight: 700 !important;
+//     font-size: 42px !important;
+//     margin-bottom: 8px;
+// }
 
 .icon-links {
     display: flex;
@@ -43,7 +43,7 @@
 
     a {
         cursor: pointer;
-       
+
         &:hover {
             transform: scale(1.2);
         }
@@ -52,5 +52,31 @@
     img {
         margin-left: 16px;
         margin-right: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-direction: column;
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    .links {
+        padding-top: 12px;
+        align-items: center;
+
+        a {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+
+    .icon-links {
+        padding-bottom: 8px;
     }
 }
