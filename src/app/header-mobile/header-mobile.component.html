@@ -1,13 +1,18 @@
 <div class="header-container">
     <a href="#home">
-       <img class="logo" src="assets/img/icons/android-chrome-192x192.png" alt="Picture of my logo.">
+        <img class="logo" src="assets/img/icons/android-chrome-192x192.png" alt="Picture of my logo.">
     </a>
 
-    <!-- gehört in das burger menu -->
-    <!-- <div class="link-container">
-        <a href="#aboutMe">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a routerLink="/imprint" rel="nofollow">Imprint</a>
-    </div> -->
+    <div>
+        <img (click)="showDropdown()" *ngIf="showBurgerMenu" class="burger-menu" src="assets/img/burger-menu.png" alt="Picture of a burger-menu image">
+        <img (click)="closeDropDownMenu()" *ngIf="showDropdownImage" class="burger-menu" src="assets/img/close.png" alt="Picture of a close button">
+    </div>
 </div>
+
+<div *ngIf="showDropdownImage" class="dropdown-menu">
+    <a href="#aboutMe" (click)="closeDropDownMenu()">About me</a>
+    <a href="#skills" (click)="closeDropDownMenu()">Skills</a>
+    <a href="#portfolio" (click)="closeDropDownMenu()">Portfolio</a>
+    <a routerLink="/imprint" rel="nofollow" (click)="closeDropDownMenu()">Imprint</a>
+</div>
+   
