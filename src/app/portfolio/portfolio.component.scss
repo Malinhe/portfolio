@@ -3,6 +3,11 @@
     box-sizing: border-box;
     padding-left: 100px;
     padding-top: 100px;
+
+    @media (max-width: 576px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 .portfolio-title {
