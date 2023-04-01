@@ -146,3 +146,53 @@
     right: -14rem;
     height: 37rem;
 }
+
+@media (max-width: 576px) {
+    .contact-me {
+        flex-direction: column;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .content-description {
+        max-width: 100%;
+        padding-left: 8px;
+
+        span {
+            font-size: 23px;
+            line-height: 120%;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 120%;
+        }
+    }
+
+    .contact-formular {
+        form {
+            align-items: flex-start;
+            padding-left: 8px;
+        }
+
+        input {
+            width: 18.5rem;
+        }
+
+        textarea {
+            width: 18.5rem;
+        }
+
+        button {
+            margin-left: 40px;
+        }
+    }
+
+    .purple-shadow {
+        position: absolute;
+        width: 24rem;
+        z-index: -1;
+        right: 0;
+        height: 25rem;
+    }
+}
