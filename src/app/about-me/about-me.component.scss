@@ -107,8 +107,15 @@
 
     .curved-image {
         bottom: unset;
-        top: 90vh;
+        top: 52%;
         transform: unset;
+    }
+}
+
+@media (max-width: 840px) {
+    .curved-image {
+        top: 51%;
+        height: 7rem;
     }
 }
 
@@ -148,11 +155,41 @@
         height: 8rem;
         left: 0;
         right: 0;
-        top: 56vh;
+        top: 39%;
+    }
+}
+
+@media (max-width: 510px) {
+    .curved-image {
+        top: 37%;
     }
 }
 
 @media (max-width: 420px) {
     .curved-image {
-    top: 43vh;
-}}
+        top: 36vh;
+    }
+
+    .about-me,
+    .info {
+        padding-left: 28px;
+    }
+}
+
+@media (max-width: 415px) {
+    .curved-image {
+        top: 36%;
+    }
+}
+
+@media (max-width: 376px) {
+    .curved-image {
+        top: 32%;
+    }
+
+    @media (max-width: 360px) {
+        .curved-image {
+            top: 31%;
+        }
+    }
+}
