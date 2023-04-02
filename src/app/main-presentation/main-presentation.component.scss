@@ -1,5 +1,6 @@
  .content {
      width: 100vw;
+     max-width: 100%;
      box-sizing: border-box;
  }
 
@@ -183,10 +184,11 @@
  }
 
  @media (max-width: 820px) {
-    .img-left,
-    .img-right {
-        width: 18rem;
-    }
+
+     .img-left,
+     .img-right {
+         width: 18rem;
+     }
 
      .my-name {
          font-size: 64px;
@@ -208,11 +210,11 @@
  }
 
  @media (max-width: 650px) {
-    
-    .img-left,
-    .img-right {
-        width: 16rem;
-    }
+
+     .img-left,
+     .img-right {
+         width: 16rem;
+     }
 
      .name-job-title {
          margin-left: 16px;
@@ -242,22 +244,23 @@
  }
 
  @media (max-width: 520px) {
-    .img-left {
-        top: 62px;
-        height: 26rem;
-    }
+     .img-left {
+         top: 62px;
+         height: 26rem;
+     }
 
-    .img-right {
-        top: 17rem;
-        height: 25rem;
-    }
+     .img-right {
+         top: 17rem;
+         height: 25rem;
+     }
  }
 
  @media (max-width: 440px) {
-    .img-left,
-    .img-right {
-        width: 14rem;
-    }
+
+     .img-left,
+     .img-right {
+         width: 14rem;
+     }
 
      .name-job-title {
          margin-left: 8px;
