@@ -25,14 +25,14 @@ export class ProjectsComponent {
       github: 'JOIN-V3'
     },
 
-    // {
-    //   img: 'ringOfFire.png',
-    //   name: 'Ring of fire',
-    //   languages: 'Angular | TypeScript | Firebase | HTML | SCSS',
-    //   description: 'The well-known card drinking game.',
-    //   liveTest: 'Ring of fire',
-    //   github: 'ringoffire'
-    // }
+    {
+      img: 'ringoffire.png',
+      name: 'Ring of fire',
+      languages: 'Angular | TypeScript | Firebase | HTML | SCSS',
+      description: 'The well-known card drinking game.',
+      liveTest: 'Ring of fire',
+      github: 'ringoffire'
+    }
 
   ];
 }
