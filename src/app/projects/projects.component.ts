@@ -30,7 +30,7 @@ export class ProjectsComponent {
       name: 'Ring of fire',
       languages: 'Angular | TypeScript | Firebase | HTML | SCSS',
       description: 'The well-known card drinking game.',
-      liveTest: 'Ring of fire',
+      liveTest: 'ringoffire',
       github: 'ringoffire'
     }
 
