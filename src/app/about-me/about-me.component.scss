@@ -41,50 +41,54 @@
     position: relative;
     margin-top: 12px;
     max-width: 455px;
-    padding-right: 32px;
+    padding-right: 100px;
 }
 
 .shadow-photo-bg {
-
-    width: 32rem;
+    width: 40rem;
     height: 32rem;
     margin-top: 175px;
 }
 
 .profile-pic {
     position: absolute;
-    top: 114px;
-    width: 30rem;
-    height: 33rem;
+    top: 0;
+    width: 40rem;
+    height: 40rem;
     object-fit: contain;
 }
 
 .curved-image {
     position: absolute;
     width: 100vw;
-    height: 10rem;
+    height: 14rem;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -72px;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1225px) {
     .about-me {
         font-size: 60px;
     }
 
     .profile-pic-container {
-        padding-right: unset;
+        padding-right: 4px;
     }
 
     .profile-pic {
-        width: 24rem;
-        height: 32rem;
-        right: 0;
+        width: 26rem;
+        height: 43rem;
+        right: 0px;
+    }
+
+    .shadow-photo-bg {
+        width: 28rem;
+        height: 33rem;
     }
 
     .curved-image {
-        height: 5rem;
+        height: 12rem;
         transform: rotate(-2deg);
     }
 }
@@ -107,7 +111,7 @@
 
     .curved-image {
         bottom: unset;
-        top: 52%;
+        top: 48%;
         transform: unset;
     }
 }
@@ -119,8 +123,8 @@
     }
 
     .curved-image {
-        top: 51%;
-        height: 7rem;
+        top: 48%;
+        height: 12rem;
     }
 }
 
@@ -167,7 +171,7 @@
 
 @media (max-width: 420px) {
     .curved-image {
-        top: 36vh;
+        top: 33%;
     }
 
     .about-me,
@@ -176,20 +180,17 @@
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 380px) {
     .curved-image {
-        top: 36%;
+        top: 31%;
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 350px) {
     .curved-image {
-        top: 32%;
-    }
-
-    @media (max-width: 360px) {
-        .curved-image {
-            top: 31%;
-        }
+        top: 29%;
     }
 }
+
+
+  
