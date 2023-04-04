@@ -33,6 +33,5 @@ export class ProjectsComponent {
       liveTest: 'ringoffire',
       github: 'ringoffire'
     }
-
   ];
 }

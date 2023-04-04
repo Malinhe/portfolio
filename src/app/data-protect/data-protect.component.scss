@@ -4,3 +4,22 @@
     padding-right: 100px;
     padding-top: 100px;
 }
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
