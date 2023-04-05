@@ -11,14 +11,7 @@ html {
   
   // Verstecke die Standard-Scrollbar
   ::-webkit-scrollbar {
-    display: none;
-  }
-
-  // Zeige die eigene Scrollbar, wenn der Mauszeiger darüber schwebt
-  &:hover {
-    ::-webkit-scrollbar {
-      display: block;
-    }
+    display: block;
   }
 
   // Stilisiere die eigene Scrollbar
