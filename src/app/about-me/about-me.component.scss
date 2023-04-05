@@ -102,6 +102,7 @@
         margin-left: unset;
         padding-left: 40px;
         padding-right: 40px;
+        margin-top: 32px;
     }
 
     .about-me {
@@ -130,15 +131,32 @@
 }
 
 @media (max-width: 576px) {
+    .about-me {
+        text-align: center;
+    }
+
+    .info {
+        text-align: center;
+    }
+
     .about-infos {
         font-size: 16px;
         line-height: 120%;
         margin-top: 4rem;
+
+        img {
+            margin-right: unset;
+        }
     }
 
     .d-flex {
         flex-direction: column;
         margin-top: 16px;
+        margin-left: unset;
+
+        p {
+            text-align: center;
+        }
     }
 
     .shadow-photo-bg {
@@ -175,10 +193,10 @@
         top: 33%;
     }
 
-    .about-me,
-    .info {
-        padding-left: 28px;
-    }
+    // .about-me,
+    // .info {
+    //     padding-left: 28px;
+    // }
 }
 
 @media (max-width: 380px) {
@@ -192,6 +210,3 @@
         top: 29%;
     }
 }
-
-
-  
