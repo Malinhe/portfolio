@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      img: 'elPolloLoco.png',
+      img: 'elpolloloco.png',
       name: 'El pollo loco',
       languages: 'JavaScript | HTML | CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins, hearts and salsa-bottles bottles to fight against the big chicken.',

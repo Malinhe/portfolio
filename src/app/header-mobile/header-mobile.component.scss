@@ -20,7 +20,6 @@
 
 .dropdown-menu {
     background-color: #424856;
-    opacity: 0.8;
     z-index: 4;
     height: 100vh;
     width: 100vw;
@@ -52,6 +51,5 @@
 @media (max-width: 720px) {
     .header-container {
         padding-left: 25px;
-        // padding-right: 25px;
     }
 }

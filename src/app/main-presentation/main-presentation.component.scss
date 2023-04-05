@@ -90,7 +90,7 @@
          &:hover {
              background-color: #9747FF;
              transform-origin: top left;
-             animation: btn-animation 175ms ease-in;
+             animation: btn-animation 175ms ease-in-out;
              transform: scaleX(1.3) scaleY(1.3);
          }
      }
