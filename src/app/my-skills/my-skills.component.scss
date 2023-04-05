@@ -195,7 +195,7 @@
      }
 
      .get-in-touch-btn {
-        margin-right: 64px;
+         margin-right: 64px;
      }
  }
 
@@ -208,15 +208,15 @@
      }
 
      .skills {
-        img {
-            width: 28px;
-        }
+         img {
+             width: 28px;
+         }
 
-        span {
-            font-size: 14px;
-            line-height: 120%;
-        }
-    }
+         span {
+             font-size: 14px;
+             line-height: 120%;
+         }
+     }
  }
 
  @media (max-width: 576px) {
@@ -254,13 +254,13 @@
          padding-top: unset;
 
          td {
-             padding-right: 20px;
+             padding-right: 14px;
              padding-bottom: 30px;
          }
      }
 
      .get-in-touch-btn {
-        margin-right: 24px;
+         margin-right: 24px;
      }
  }
 
@@ -274,7 +274,7 @@
      .skill-container {
          td {
              padding-right: 24px;
-             padding-left: 24px;
+             padding-left: 12px;
          }
      }
 
