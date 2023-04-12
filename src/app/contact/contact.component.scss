@@ -154,6 +154,7 @@
 @media (max-width: 1230px) {
     .contact-title {
         margin-top: 24px;
+
         h2 {
             font-size: 80px;
         }
@@ -179,7 +180,7 @@
 }
 
 @media (max-width: 912px) {
- 
+
     .purple-shadow {
         width: 60%;
         right: 72px;
@@ -237,8 +238,9 @@
 
         form {
             align-items: center;
-            padding-left: 38%;
+            padding-left: 22%;
             padding-top: 24px;
+            width: 100%;
         }
 
         input {
@@ -258,7 +260,7 @@
 @media (max-width: 750px) {
     .contact-formular {
         form {
-            padding-left: 20%;
+            padding-left: 10%;
         }
 
         input {
@@ -274,7 +276,7 @@
 @media (max-width: 675px) {
     .contact-formular {
         form {
-            padding-left: 20%;
+            width: 85%;
         }
 
         input {
@@ -336,7 +338,7 @@
 
         form {
             align-items: center;
-            padding-right: 24px;
+            padding-left: unset;
         }
 
         button {
