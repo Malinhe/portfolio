@@ -3,10 +3,11 @@ body {
   background-color: #141D2F;
   font-family: 'Poppins';
   font-style: normal;
-  overflow-x: hidden;
 }
 
 html {
+  overflow-x: hidden;
+
   scroll-behavior: smooth;
   
   // Verstecke die Standard-Scrollbar
@@ -24,7 +25,6 @@ html {
     background-color: #9747FF;
     border-radius: 5px;
   }
-
 }
 
 .logo {

@@ -1,3 +1,7 @@
+:host {
+    overflow: hidden;
+}
+
 .contact-title {
     display: flex;
     align-items: center;
@@ -14,6 +18,7 @@
 }
 
 .contact-me {
+    position: relative;
     margin-top: 260px;
     padding: 0px 100px 0px 100px;
     display: flex;
@@ -124,38 +129,64 @@
 .go-up-btn {
     display: flex;
     justify-content: center;
-    padding-top: 90px;
-
+    padding-top: 52px;
+    padding-left: 50rem;
+    padding-right: 100px;
 
     img {
         cursor: pointer;
-        
-    &:hover {
-        transform: scale(1.1);
-    }
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
 .purple-shadow {
     position: absolute;
-    bottom: -28rem;
+    bottom: -16rem;
     width: 56rem;
     z-index: -1;
-    height: 37rem;
+    height: 22rem;
+    right: 8px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
     .contact-title {
+        margin-top: 24px;
         h2 {
-            font-size: 60px;
+            font-size: 80px;
+        }
+    }
+
+    .contact-me {
+        padding-right: 75px;
+    }
+
+    .contact-formular {
+        form {
+            padding-left: 64px;
+        }
+
+        input {
+            width: 85%;
+        }
+
+        textarea {
+            width: 85%;
         }
     }
 }
 
 @media (max-width: 912px) {
+ 
     .purple-shadow {
         width: 60%;
         right: 72px;
+    }
+
+    .go-up-btn {
+        padding-left: 37rem;
     }
 }
 
@@ -207,11 +238,56 @@
         form {
             align-items: center;
             padding-left: 38%;
+            padding-top: 24px;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%,
+        }
+    }
+
+    .go-up-btn {
+        padding-left: 32rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .contact-formular {
+        form {
+            padding-left: 20%;
+        }
+
+        input {
+            width: 90%;
+        }
+
+        textarea {
+            width: 90%;
         }
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 675px) {
+    .contact-formular {
+        form {
+            padding-left: 20%;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 620px) {
     .content-description {
         p {
             margin-left: unset;
@@ -226,7 +302,6 @@
     .contact-formular {
         form {
             align-items: flex-start;
-            padding-left: unset;
         }
 
         input {
@@ -251,6 +326,7 @@
     .go-up-btn {
         bottom: -8rem;
         right: 11rem;
+        padding-left: 10rem;
     }
 }
 
