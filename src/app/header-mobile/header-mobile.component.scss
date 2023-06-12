@@ -15,9 +15,11 @@
     overflow: hidden;
 }
 
+
 .burger-menu {
     cursor: pointer;
 }
+
 
 .dropdown-menu {
     background-color: #424856;
@@ -42,12 +44,14 @@
     }
 }
 
+
 @media (max-width: 1000px) {
     .header-container {
         padding-left: 50px;
         padding-right: 50px;
     }
 }
+
 
 @media (max-width: 720px) {
     .header-container {

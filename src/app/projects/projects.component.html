@@ -1,7 +1,10 @@
-<div *ngFor="let project of projects; let i = index" class="content-container"
+<!-- <div class="content-container">
+<div style="display: flex; justify-content: space-between;" *ngFor="let project of projects; let i = index" 
   [ngClass]="{ 'content-right': i % 2 !== 0, 'content-left': i % 2 === 0 }">
+  <div style="background-color: aqua;">
   <img class="image-container" src="assets/img/portfolio-pics/{{project.img}}">
-  <div class="text-container">
+</div>
+  <div class="text-container" style="background-color: blue;">
     <h2>{{ project.name }}</h2>
     <p class="languages">{{ project.languages }}</p>
     <p class="description">{{ project.description }}</p>
@@ -13,5 +16,37 @@
         <button class="github-btn">Github</button>
       </a>
     </div>
+  </div>
+</div>
+</div> -->
+
+
+<div>
+  <div *ngFor="let project of projects; let i = index" 
+  [ngClass]="{ 'content-right': i % 2 === 0, 'content-left': i % 2 !== 0 }" 
+  style="display: flex; justify-content: space-between;">
+
+    <div class="text-container">
+      <h2>{{ project.name }}</h2>
+      <p class="languages">{{ project.languages }}</p>
+      <p class="description">{{ project.description }}</p>
+
+      <div class="btn-container">
+        <a href="https://malaica-brunks.net/{{ project.liveTest }}" target="_blank">
+          <button class="live-test-btn">Live test</button>
+        </a>
+        <a href="https://github.com/Malinhe/{{ project.github }}" target="_blank">
+          <button class="github-btn">Github</button>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="img-container">
+      <img class="project-picture" src="assets/img/portfolio-pics/{{project.img}}" alt="Picture from the project on a laptop.">
+    </div>
+
+   
+
   </div>
 </div>

@@ -2,10 +2,10 @@
     width: 100vw;
     box-sizing: border-box;
     padding-left: 100px;
-    padding-top: 100px;
-    padding-right: 56px;
-    overflow: hidden;
+    padding-top: 75px;
+    padding-right: 100px;
 }
+
 
 .portfolio-title {
     display: flex;
@@ -25,12 +25,14 @@
     }
 }
 
+
 .description {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     color: white;
 }
+
 
 @media (max-width: 1200px) {
     .portfolio-title {
@@ -45,18 +47,17 @@
         span {
             font-size: 45px;
             line-height: 120%;
-        }
-
-        img {
-            margin-left: unset;
-            margin-right: 28px;
+            margin-left: -20px;
         }
     }
 
-    .description {
-        padding-left: 80px;
+    .portfolio-content {
+        p {
+            margin-left: -20px;
+        }
     }
 }
+
 
 @media (max-width: 576px) {
     .portfolio-content {
@@ -66,13 +67,16 @@
 
         
     .portfolio-title {
+        padding-left: 100px;
         img {
-            margin-right: 12px;
+            margin-right: 24px;
+            width: 19%;
         }
     }
 
     .description {
         padding-left: 64px;
         padding-right: 56px;
+        text-align: center;
     }
 }
