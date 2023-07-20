@@ -14,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataProtectComponent } from './data-protect/data-protect.component';
 import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoadingComponent } from './loading/loading.component';
 
 
 @NgModule({
@@ -29,11 +31,14 @@ import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
     ContactComponent,
     FooterComponent,
     DataProtectComponent,
-    HeaderMobileComponent
+    HeaderMobileComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,5 @@
+<app-loading [showloading]="loadingState"></app-loading>
+
 <div id="contact" class="contact-title">
     <h2>Contact</h2>
     <img src="assets/img/green-line2.png" alt="Picture of a green line">
@@ -15,14 +17,27 @@
         <p>Need a Frontend developer? <b>Contact me!</b></p>
     </div>
 
+    <!-- //Ladescreen wird beim Klicken vom SendButton angezeigt und im Hintergrund sieht man "Fülle dieses Feld aus" xD,
+    außerdem wird der er nicht beendet. -->
     <div class="contact-formular">
-        <form action="https://malaica-brunks.net/send_mail/send_mail.php" method="post">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-            <button type="submit">Send message :)</button>
+        <form (submit)="sendMail(); showLoading()" ngNativeValidate #myForm>
+            <input required type="text" name="name" placeholder="Your name" #nameField>
+            <input required type="email" name="email" placeholder="Your email" #mailField>
+            <textarea required name="message" cols="30" rows="10" placeholder="Your message" #messageField></textarea>
+            <button type="submit" #sendBtn>Send message :)</button>
         </form>
     </div>
+
+<!-- //Ladescreen wird angezeigt, obwohl kein Feld ausgefüllt ist     -->
+    <!-- <div class="contact-formular">
+        <form (submit)="sendMail()" #myForm="ngForm">
+            <input required type="text" name="name" placeholder="Your name" #nameField>
+            <input required type="email" name="email" placeholder="Your email" #mailField>
+            <textarea required name="message" cols="30" rows="10" placeholder="Your message" #messageField></textarea>
+            <button type="submit" [disabled]="!myForm.valid" #sendBtn>Send message :)</button>
+        </form>
+    </div> -->
+
     <div class="go-up-btn">
         <a href="#home">
             <img src="assets/img/go-up-btn.png" alt="Picture of an arrow">
@@ -30,14 +45,3 @@
     </div>
     <img class="purple-shadow" src="assets/img/bg-shadows/purple-shadow-contact.png" alt="Picture of a purple shadow">
 </div>
-
-<!-- <div>
-
-<div class="go-up-btn">
-    <a href="#home">
-        <img src="assets/img/go-up-btn.png" alt="Picture of an arrow">
-    </a>
-</div>
-
-
-</div> -->
